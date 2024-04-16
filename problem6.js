@@ -38,3 +38,5 @@ var filter = function (arr, fun) {
         return result
     }, [])
 }
+
+console.log(filter([1,2,3], fun))

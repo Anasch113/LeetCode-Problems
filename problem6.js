@@ -40,3 +40,5 @@ var filter = function (arr, fun) {
 }
 
 console.log(filter([1,2,3], fun))
+
+// making commits to build streak

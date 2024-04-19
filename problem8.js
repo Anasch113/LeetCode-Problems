@@ -15,3 +15,36 @@ var compose = function (functions) {
         f(acc), x)
 
 }
+
+
+// Related Learning 
+
+// Reduce Method 
+
+
+
+// Basic Method
+const array = [5, 2, 3, 4, 5]
+
+const arrfun = array.reduce((acc, cur) => {
+    return acc + cur
+})
+
+
+
+
+
+
+// With Directly passing function to reduce function
+const array2 = [5, 2, 3, 4, 5]
+
+var sum = function (a, b) {
+    return a + b
+}
+
+const arrFun2 = array2.reduce(sum)
+
+
+
+console.log(arrfun)
+console.log(arrFun2)

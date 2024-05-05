@@ -91,3 +91,6 @@ console.log(result); // Output: 5
 // javascript
 // Copy code
 const result = sum(...args);
+
+
+//adjisdhi

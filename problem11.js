@@ -92,5 +92,10 @@ console.log(result); // Output: 5
 // Copy code
 const result = sum(...args);
 
+function sum(a,b){
+  return a + b
+}
 
+const callSum = sum(1,2)
+console.log(callSum)
 //adjisdhi

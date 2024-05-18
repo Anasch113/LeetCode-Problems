@@ -11,30 +11,30 @@
 
 const memorize = (fn) => {
 
-    const cache = {}
+  const cache = {}
 
-    return function (...args) {
-
-
-        if (key in cache) {
-            return cache[key]
-        }
-
-        const result = fn.apply(this, args)
-        cache[key] = result
-        return result
+  return function (...args) {
 
 
+    if (key in cache) {
+      return cache[key]
     }
+
+    const result = fn.apply(this, args)
+    cache[key] = result
+    return result
+
+
+  }
 }
 
 
-const memoizedSum = memoize(function(a, b) {
-    return a + b;
-  });
-  
-  console.log(memoizedSum(2, 3)); // Output: Computing sum, 5
-  console.log(memoizedSum(2, 3)); // Output: 5
+const memoizedSum = memorize(function (a, b) {
+  return a + b;
+});
+
+console.log(memoizedSum(2, 3)); // Output: Computing sum, 5
+console.log(memoizedSum(2, 3)); // Output: 5
 
 
 
@@ -43,7 +43,7 @@ const memoizedSum = memoize(function(a, b) {
 
 
 
-  // Explanation of apply function 
+// Explanation of apply function 
 
 
 
@@ -92,10 +92,13 @@ console.log(result); // Output: 5
 // Copy code
 const result = sum(...args);
 
-function sum(a,b){
+function sum(a, b) {
   return a + b
 }
 
-const callSum = sum(1,2)
+const callSum = sum(1, 2)
 console.log(callSum)
 //adjisdhi
+
+
+// for streak

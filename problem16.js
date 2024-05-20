@@ -18,3 +18,6 @@ var timelimit = function (fn, t) {
 
     }
 }
+
+
+// for streak

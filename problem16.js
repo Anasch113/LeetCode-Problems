@@ -21,3 +21,7 @@ var timelimit = function (fn, t) {
 
 
 // for streak
+
+// for streak
+
+console.log("making this console for streak")

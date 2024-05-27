@@ -17,9 +17,14 @@
 
 class TimeLimitedCache {
 
+
+    // Construnctor or Funtion to create the Map data structure
+
     constructor() {
         this.cache = new Map()
     }
+
+    // Set Function to check key exists or not , If yes then return true and if not then expires it
 
     set(key, value, duration) {
 
@@ -38,7 +43,8 @@ class TimeLimitedCache {
 
         return Boolean(alreadyExits)
     }
-
+ 
+    // Get function that returns the value of key if key exists, if not exists then return -1
     get(key) {
 
         if (this.cache.has(key)) {
@@ -47,6 +53,8 @@ class TimeLimitedCache {
         return -1
 
     }
+
+    // Count function that return the number of unexpired keys
 
     count() {
         return this.cache.size

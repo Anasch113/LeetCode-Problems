@@ -25,3 +25,6 @@ var isEmpty = function (obj) {
 
 
 };
+
+
+console.log("for streak")

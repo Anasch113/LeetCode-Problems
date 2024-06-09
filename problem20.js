@@ -28,3 +28,4 @@ var isEmpty = function (obj) {
 
 
 console.log("for streak")
+console.log("for streak")

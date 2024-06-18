@@ -22,3 +22,4 @@ var chunk = function(arr, size) {
     
     };
     
+    console.log("streak")

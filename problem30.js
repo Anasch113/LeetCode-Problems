@@ -14,7 +14,7 @@
 
 
 
-// Main concept: 
+// Main concept:  OOPS cLasses, math operations method chaining
 
 // solutions:
 
